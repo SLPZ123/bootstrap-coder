@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --bs-link-hover-color: #f8b500 !important;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 181, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #212121;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #10002b;
+    border-radius: 20px;
+    border: 3px solid #2e0249;
+}
+/*----------------------header---------------*/
+.header_container {
+    background-image: url(../img/scene00.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 400px;
+    min-height: 50rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+/*background-size: 100%;*/
+
+.header_h1 {
+    text-align: center;
+    color: #f8b500;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin-top: 300px;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+    font-size: 250%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+.header_h2 {
+    text-align: center;
+    color: #f8b500;
+    font-family: "Poppins", sans-serif;
+    /*justify-content: center;*/
+}
+.header_h1:hover,
+.header_h1:focus {
+    background-size: 100% 4px;
+}
+.nav_ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav_li {
+    text-decoration: none;
+    list-style: none;
+    color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: inherit;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none !important;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 2px !important;
+    transition: background-size 0.3s !important;
+    color: #f8b500 !important;
+    font-size: 130% !important;
+    font-family: "Poppins", sans-serif !important;
+}
+.nav-link:hover,
+.nav-link:focus {
+    background-size: 100% 2px !important;
+}
