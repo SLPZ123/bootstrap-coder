@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb {
 }
 /*----------------------header---------------*/
 .header_container {
-    background-image: url(../img/scene00.png);
+    background-image: url(../img/scene00.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
