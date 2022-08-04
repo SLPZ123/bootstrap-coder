@@ -1,85 +1,21 @@
 //Variables//
-$primary:#f8b500;
-$secondary:#16003b;
-$font:"Poppins", sans-serif;
-$text: white;
-$fond: #1b1a17;
-$font:"Poppins", sans-serif;
+@import './variables';
+/*Mixins*/
+@import './mixins';
+/* Secciones de las paginas*/
+@import './normalice';
 
-@import './_header.scss';
-@import './_footer.scss';
+@import './header';
 
-//-----------------main_about-----------------------//
+@import './galeria';
 
-.main{
-    &_section {
-    display: block;
-    width: auto;
-    height: 400px;
-    background-color: $fond;
-    color: white;
-}
-    &_image{
-        max-width: 450px;
-        float: right;
-        margin-right: 200px;
-        overflow: hidden;
-    }
+@import './form';
 
-    &_about{
-        width: 100%;
-        height: 800px;
-        word-break: break-all;
-        font-family: $font;
-        background-color: $fond;
-        color: $text;
-        display: flex;
-        justify-content: space-between;
-    }
-    &_foto{
-        width: 450px;
-        float: right;
-        margin-left: 150px;
-        &:hover{
-            -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-        }
-    }  }
+@import './about';
 
+@import './faq';
 
-    @media (max-width: 576px) {
-        .footer_ul {
-            display: flex;
-            flex-direction: column;
-            list-style: none;
-        }
-        .section_about {
-            display: flex;
-            flex-direction: column;
-            word-break: break-all;
-        }
-        .main_about {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+@import './product';
 
-    .container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        padding-right: 15px;
-        width: auto;
-        height: auto;
-        flex: 1;
-        &_p {
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-weight: bold;
-            margin-right: 15px;
-            margin-bottom: 30px;
-            font-family: $font;
-            margin-top: 20px;
-        }
-    }
+@import './footer';
+

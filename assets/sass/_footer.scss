@@ -1,10 +1,4 @@
-//Variables//
-$primary:#f8b500;
-$secondary:#16003b;
-$font:"Poppins", sans-serif;
-$text: white;
-$fond: #1b1a17;
-$font:"Poppins", sans-serif;
+
 /*------------FOOTER------------------------*/
 .footer {
     width: auto;
@@ -12,19 +6,15 @@ $font:"Poppins", sans-serif;
     background-color: $secondary !important;
     opacity: 0.9;
     color: $primary !important;
-    display: flex;
+    @include flex (none,center,none,none,none);
     align-items: flex-end;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
+   font-family: "Poppins", sans-serif;
     &_ul{
-        display: flex;
-        align-items: flex-start;
+        @include flex (none,none,none,flex-start,none);
         list-style: none;
     }
     &_nav {
-        display: flex;
-        flex: 2;
-        align-items: flex-end;
+        @include flex (none,none,none,flex-end,2);
         padding-right: 50px;
     }
     &_image3 {
@@ -66,13 +56,8 @@ $font:"Poppins", sans-serif;
     }
 }
 
-
-
-
-
 @media (max-width: 576px) {
     .footer_ul {
-        display: flex;
-        flex-direction: column;
+        @include flex(none,column,none,none,none);
         list-style: none;
     } }

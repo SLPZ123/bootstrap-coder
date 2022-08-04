@@ -1,34 +1,6 @@
-//Variables//
-$primary:#f8b500;
-$secondary:#16003b;
-$font:"Poppins", sans-serif;
-$text: white;
-$fond: #1b1a17;
-$font:"Poppins", sans-serif;
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    --bs-link-hover-color: variable.$primary !important;
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 181, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-body{
-    &::-webkit-scrollbar {
-    width: 12px;
-}
 
-    &::-webkit-scrollbar-track {
-    background: #212121;
-}
-
-    &::-webkit-scrollbar-thumb {
-    background-color: #10002b;
-    border-radius: 20px;
-    border: 3px solid #2e0249;
-}
-    }
 /*----------------------header---------------*/
 .header
 {
