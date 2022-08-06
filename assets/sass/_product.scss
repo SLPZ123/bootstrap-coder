@@ -10,85 +10,39 @@
 
 .card{
 
- &:hover {
-    filter: opacity(.5);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.1);
-}
+
 
 &_body {
-    @include flex(column, center, flex-start, none, none);
-    padding: 20px;
-    min-height: 150px;
+    @include flex(column, center, flex-start, none, none) ;
+    padding: 20px !important;
+    min-height: 150px !important;
     color: #f8b500;
     background-color: #2e0249;
 }
 
-&-link {
-    color: #2e0249 !important;
-}
 
 .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+
+    height: 200px !important;
+    object-fit: cover !important;
 }
 }
-.boton-compra {
-    position: relative;
-    height: 50px;
-    padding: 0 30px;
-    border: 2px solid #000;
-    background: #e8e8e8;
-    user-select: none;
-    white-space: nowrap;
-    transition: all .05s linear;
-    font-family: inherit;
+}
 
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        background: #e8e8e8;
-        transition: all .2s linear;
-    }
+.carrito{
+    width: 40px;
+    height: 40px;
 
-    &:before {
-        width: calc(100% + 6px);
-        height: calc(100% - 16px);
-        top: 8px;
-        left: -3px;
+}
+.btn{
+    background-color:$secondary !important;
+    border-color: $secondary !important;
+    &:hover{
+        background-color: #561480 !important;
+        cursor: pointer;
     }
-
-    &:after {
-        width: calc(100% - 16px);
-        height: calc(100% + 6px);
-        top: -3px;
-        left: 8px;
-    }
-
-    &:hover {
-        cursor: crosshair;
-    }
-
-    &:active {
-        transform: scale(0.95);
-    }
-
-    &:hover:before {
-        height: calc(100% - 32px);
-        top: 16px;
-    }
-
-    &:hover:after {
-        width: calc(100% - 32px);
-        left: 16px;
-    }
-
-    & span {
-        font-size: 15px;
-        z-index: 3;
-        position: relative;
-        font-weight: 600;
-    }
-} }
+    &-primary{
+        background-color:$secondary !important;
+        border-color: $secondary !important;
+        }
+}
