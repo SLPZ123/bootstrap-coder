@@ -12,3 +12,7 @@
 <li>SCSS</li>
 <li>SASS</li>
 </ul>
+
+<h2>Librerias</h2>
+<p>Flaticon: Para importar iconos. </p>
+<p>BOOTSTRAP</p>
