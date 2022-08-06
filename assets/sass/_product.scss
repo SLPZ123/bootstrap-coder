@@ -9,24 +9,23 @@
 
 
 .card{
-
+height: 650px !important;
+margin-top: 1rem !important;
+margin-bottom: 1rem !important;
 
 
 &_body {
-    @include flex(column, center, flex-start, none, none) ;
-    padding: 20px !important;
+    @include flex(column, space-between, none, flex-start, none) ;
+
     min-height: 150px !important;
-    color: #f8b500;
+    color: $primary;
     background-color: #2e0249;
 }
-
-
-.card img {
-
-    height: 200px !important;
-    object-fit: cover !important;
-}
-}
+&-img-top{
+width:100% !important;
+height: 400px !important;
+object-fit: contain !important;
+background-color: rgb(33, 37, 41);
 }
 
 .carrito{
@@ -37,6 +36,8 @@
 .btn{
     background-color:$secondary !important;
     border-color: $secondary !important;
+    width: 100% !important;
+
     &:hover{
         background-color: #561480 !important;
         cursor: pointer;
@@ -46,3 +47,4 @@
         border-color: $secondary !important;
         }
 }
+    }  }

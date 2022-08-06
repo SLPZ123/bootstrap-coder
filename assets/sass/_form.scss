@@ -1,42 +1,61 @@
 /*-------------------form----------------------------*/
 .main_form {
-    background-color: black;
-    @include flex (none, space-between, none, none, none);
+    background-color: rgb(38,37,37);
+    @include flex (row, space-between, none, none, none);
 
-
+    @media (max-width:$netbook) {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: auto !important;
+        height: auto !important;
+    }
     @media (max-width:$tablet) {
         display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-
+        flex-direction: column !important;
+        align-items: center !important;
+        width: auto !important;
+        height: auto !important;
     }
-
     @media (max-width:$smartphones) {
         display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: auto !important;
+        height: auto !important;
     }
 
     &_div {
         width: 400px;
         height: auto;
         overflow: hidden;
-
-        @include flex (none, space-between, none, none, 2);
+        @media (max-width:$netbook) {
+            width: 300px !important;
+            align-self: center !important;
+        }
+        @media (max-width:$tablet) {
+            width: 200px !important;
+            align-self: center !important;
+        }
+        @media (max-width:$smartphones) {
+            width: 200px !important;
+            align-self: center !important;
+        }
 
         &_image {
             width: 400px;
             height: auto;
 
+            @media (max-width:$netbook) {
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+            }
             @media (max-width:$smartphones) {
                 width: 200px;
                 height: 300px;
                 overflow: hidden;
-
             }
-
             @media (max-width:$tablet) {
                 width: 200px;
                 height: 300px;
@@ -46,35 +65,28 @@
             }
         }
     }
-
-
-
-
-
-
-
-
     &_container {
         width: 600px;
-        height: 700px;
+        height: auto;
         border-radius: 0;
 
-        @include flex (none, center, none, none, 1);
+        @include flex (none, center, none, none, none);
 
         margin: 0;
         background-color: rgb(38, 37, 37);
         color: #ffea00;
         font-family: $font;
 
-        @media (max-width: $smartphones) {
+        @media (max-width: $netbook) {
             width: auto;
-            height: 300px;
             display: inline-block;
         }
-
+        @media (max-width: $smartphones) {
+            width: auto;
+            display: inline-block;
+        }
         @media (max-width: $tablet) {
             width: auto;
-            height: 300px;
             display: inline-block;
         }
     }
