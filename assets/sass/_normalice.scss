@@ -21,3 +21,26 @@ body{
     border: 3px solid #2e0249;
 }
     }
+
+.float{
+    position:fixed;
+	width:40px;
+	height:40px;
+	bottom:40px;
+	right:40px;
+	background-color:$secondary;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px $secondary;
+    z-index:100;
+    &:hover {
+	text-decoration: none;
+	color: $secondary;
+    background-color:$primary;
+}
+    &-flecha{
+    margin-top:16px;
+}
+
+}

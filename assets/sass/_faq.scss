@@ -44,3 +44,10 @@
     }
 }
 }
+
+.enlace{
+    color: $primary !important;
+    &:hover{
+        color: $secondary !important;
+    }
+}

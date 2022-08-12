@@ -18,6 +18,25 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid #2e0249; }
 
+.float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #16003b;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #16003b;
+  z-index: 100; }
+  .float:hover {
+    text-decoration: none;
+    color: #16003b;
+    background-color: #f8b500; }
+  .float-flecha {
+    margin-top: 16px; }
+
 /*----------------------header---------------*/
 .header_container {
   background-image: url(../img/scene00.png);
@@ -408,6 +427,7 @@ body::-webkit-scrollbar-thumb {
     border-width: 0 0.15em 0.15em 0;
     transform: rotate(45deg); }
 
+/*-----------------main_about-----------------------*/
 .main_section {
   display: block;
   width: auto;
@@ -520,6 +540,7 @@ body::-webkit-scrollbar-thumb {
       font-family: "Poppins", sans-serif;
       margin-top: 20px; }
 
+/*main-faq*/
 .main_faq {
   background-color: #1b1a17;
   height: auto;
@@ -557,6 +578,11 @@ body::-webkit-scrollbar-thumb {
     .carousel-inner {
       width: 350px !important;
       height: 233.33px !important; } }
+
+.enlace {
+  color: #f8b500 !important; }
+  .enlace:hover {
+    color: #16003b !important; }
 
 /*----------------------product-----------------*/
 .main_product {
