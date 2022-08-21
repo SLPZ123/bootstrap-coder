@@ -96,6 +96,7 @@
                     align-items: center;
                     width: fit-content;
                     justify-content: space-between;
+
                 }
                 @media (max-width:$tablet)
                 {
@@ -235,9 +236,7 @@
 
     .link2 {
         text-decoration: none;
-        background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;
-        background-repeat: no-repeat;
         background-size: 0% 2px;
         transition: background-size 0.3s;
         color: $primary !important;

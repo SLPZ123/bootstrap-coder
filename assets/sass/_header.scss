@@ -7,13 +7,46 @@
     &_container {
     background-image: url(../img/scene00.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     width: auto;
     height: 400px;
     min-height: 50rem;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    @media (max-width:$smartphones) {
+        background-image: url(../img/fondo-mas-chico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 478;
+    height: 300px;
+    min-height: 20rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    }
+    @media (max-width:$tablet) {
+        background-image: url(../img/fondo-mas-chico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: cover;
+    height: 728px;
+    min-height: 20rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    }
+    @media (max-width:$netbook) {
+        background-image: url(../img/scene00.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 1000px;
+    min-height: 20rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    }
 }
     &_h1{
     text-align: center;

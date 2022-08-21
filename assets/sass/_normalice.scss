@@ -38,9 +38,29 @@ body{
 	text-decoration: none;
 	color: $secondary;
     background-color:$primary;
+    @media (max-width:$smartphones) {
+        font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+        &:hover {
+            text-decoration: none;
+            color: $secondary;
+            background-color:$primary;
+    }
+    @media (max-width:$tablet) {
+        font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+        &:hover {
+            text-decoration: none;
+            color: $secondary;
+            background-color:$primary;
+    }
 }
     &-flecha{
     margin-top:16px;
 }
 
-}
+} } }

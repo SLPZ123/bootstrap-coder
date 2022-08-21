@@ -18,6 +18,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid #2e0249; }
 
+/*----------------FLECHA-BOTON----------------------*/
 .float {
   position: fixed;
   width: 40px;
@@ -34,8 +35,29 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: #16003b;
     background-color: #f8b500; }
-  .float-flecha {
-    margin-top: 16px; }
+    @media (max-width: 480px) {
+      .float:hover {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px; }
+        .float:hover:hover {
+          text-decoration: none;
+          color: #16003b;
+          background-color: #f8b500; } }
+  @media (max-width: 480px) and (max-width: 728px) {
+    .float:hover {
+      font-size: 14px;
+      padding: 12px 20px;
+      bottom: 20px;
+      right: 20px; }
+      .float:hover:hover {
+        text-decoration: none;
+        color: #16003b;
+        background-color: #f8b500; } }
+    @media (max-width: 480px) {
+        .float:hover-flecha {
+          margin-top: 16px; } }
 
 /*----------------------header---------------*/
 .header_container {
@@ -590,7 +612,7 @@ body::-webkit-scrollbar-thumb {
   .main_product_container {
     background: #323131; }
   .main_product .card {
-    height: 650px !important;
+    height: 550px !important;
     margin-top: 1rem !important;
     margin-bottom: 1rem !important; }
     .main_product .card_body {
@@ -819,9 +841,7 @@ body::-webkit-scrollbar-thumb {
 
 .link2 {
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
-  background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size 0.3s;
   color: #f8b500 !important;
