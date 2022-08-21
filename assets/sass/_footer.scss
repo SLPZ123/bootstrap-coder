@@ -1,23 +1,30 @@
 /*------------FOOTER------------------------*/
 .footer {
     width: auto;
-    height: 250px;
+    height: 150px;
     background-color: $secondary !important;
     opacity: 0.9;
     color: $primary !important;
-    @include flex (none, center, none, none, none);
+    @include flex (none, center, none, center, none);
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    @media (max-width:$tablet) {
+       flex-direction: column;
+       align-items: flex-start;
+        width: auto;
+        height:fit-content ;
+    }
 
     &_ul {
         @include flex (row, none, none, center, none);
         list-style: none;
         margin-bottom: 0px !important;
-        &_p{
-            margin-bottom: 0px !important;
-        }
+        padding-left: 0px !important;
+        
     }
-
+    &_p{
+        margin-bottom: 0px !important;
+    }
 
     &_nav {
         @include flex (none, none, none, flex-end, 2);
@@ -35,7 +42,6 @@
     &_redes {
         width: 50px;
         height: 50px;
-        float: left;
         margin: 20px;
         transition: all 0.4s ease-out;
         border-radius: 50%;

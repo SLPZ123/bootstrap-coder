@@ -24,8 +24,8 @@ body::-webkit-scrollbar-thumb {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  right: 40px;
-  background-color: #16003b;
+  right: 15px;
+  background-color: #f8b500;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -43,8 +43,8 @@ body::-webkit-scrollbar-thumb {
         right: 20px; }
         .float:hover:hover {
           text-decoration: none;
-          color: #16003b;
-          background-color: #f8b500; } }
+          color: #561480;
+          background-color: #561480; } }
   @media (max-width: 480px) and (max-width: 728px) {
     .float:hover {
       font-size: 14px;
@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
       .float:hover:hover {
         text-decoration: none;
         color: #16003b;
-        background-color: #f8b500; } }
+        background-color: #561480; } }
     @media (max-width: 480px) {
         .float:hover-flecha {
           margin-top: 16px; } }
@@ -63,8 +63,9 @@ body::-webkit-scrollbar-thumb {
 .header_container {
   background-image: url(../img/scene00.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
+  background-position: center;
   width: auto;
   height: 400px;
   min-height: 50rem;
@@ -72,29 +73,37 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold; }
 
 .header_h1 {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-content: none !important;
+  align-items: none !important;
+  flex: none !important;
   text-align: center;
   color: #f8b500;
   font-family: Arial, Helvetica, sans-serif;
-  justify-content: center;
-  margin-top: 300px;
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.3s;
-  font-size: 250%;
+  font-size: 4rem;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
   align-self: flex-start; }
-  .header_h1:hover, .header_h1 :focus {
-    background-size: 100% 4px; }
+  .header_h1::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #f8b500;
+    transition: width .25s;
+    line-height: 100px;
+    width: 0px;
+    align-self: center; }
+  .header_h1:hover::after {
+    width: 270px; }
 
 .header_h2 {
   text-align: center;
   color: #f8b500;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
 
 .nav_ul {
   display: flex;
@@ -109,7 +118,8 @@ body::-webkit-scrollbar-thumb {
   align-items: flex-end;
   flex-direction: inherit;
   margin-top: 10px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  font-weight: bold; }
 
 .nav-link {
   text-decoration: none !important;
@@ -118,9 +128,11 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat !important;
   background-size: 0% 2px !important;
   transition: background-size 0.3s !important;
+  font-weight: bold;
   color: #f8b500 !important;
   font-family: "Poppins", sans-serif !important; }
-  .nav-link:hover, .nav-link :focus {
+  .nav-link:hover,
+  .nav-link :focus {
     background-size: 100% 2px !important; }
 
 /*------------------------------------Main index--------------------------*/
@@ -141,6 +153,14 @@ body::-webkit-scrollbar-thumb {
   grid-auto-rows: 200px;
   gap: 1rem;
   grid-auto-flow: row dense; }
+
+.main_article {
+  border-radius: 0;
+  transition: all .2s; }
+  .main_article:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 1px #f8b500; }
 
 .main_article:nth-child(11n + 1) {
   grid-column: span 1; }
@@ -174,11 +194,11 @@ body::-webkit-scrollbar-thumb {
   flex: none !important;
   padding-bottom: 120px; }
 
-@media all and (min-width: 320px) {
+@media all and (min-width: 480px) {
   .main_gallery_section {
     grid-template-columns: repeat(1, 1fr); } }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 728px) {
   .main_gallery_section {
     grid-template-columns: repeat(3, 1fr); } }
 
@@ -196,6 +216,7 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   width: auto;
   height: 400px;
   min-height: 50rem;
@@ -614,7 +635,13 @@ body::-webkit-scrollbar-thumb {
   .main_product .card {
     height: 550px !important;
     margin-top: 1rem !important;
-    margin-bottom: 1rem !important; }
+    margin-bottom: 1rem !important;
+    border-radius: 0;
+    transition: all .2s; }
+    .main_product .card:hover {
+      transform: scale(0.98);
+      border-radius: 20px;
+      box-shadow: 0px 0px 30px 1px #f8b500; }
     .main_product .card_body {
       display: flex !important;
       flex-direction: column !important;
@@ -647,7 +674,7 @@ body::-webkit-scrollbar-thumb {
 /*------------FOOTER------------------------*/
 .footer {
   width: auto;
-  height: 250px;
+  height: 150px;
   background-color: #16003b !important;
   opacity: 0.9;
   color: #f8b500 !important;
@@ -655,10 +682,16 @@ body::-webkit-scrollbar-thumb {
   flex-direction: none !important;
   justify-content: center !important;
   align-content: none !important;
-  align-items: none !important;
+  align-items: center !important;
   flex: none !important;
   font-family: "Poppins", sans-serif;
   font-weight: bold; }
+  @media (max-width: 728px) {
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      height: fit-content; } }
   .footer_ul {
     display: flex !important;
     flex-direction: row !important;
@@ -667,9 +700,10 @@ body::-webkit-scrollbar-thumb {
     align-items: center !important;
     flex: none !important;
     list-style: none;
+    margin-bottom: 0px !important;
+    padding-left: 0px !important; }
+  .footer_p {
     margin-bottom: 0px !important; }
-    .footer_ul_p {
-      margin-bottom: 0px !important; }
   .footer_nav {
     display: flex !important;
     flex-direction: none !important;
@@ -686,7 +720,6 @@ body::-webkit-scrollbar-thumb {
   .footer_redes {
     width: 50px;
     height: 50px;
-    float: left;
     margin: 20px;
     transition: all 0.4s ease-out;
     border-radius: 50%; }
